@@ -4,6 +4,9 @@
 *.obj
 *.elf
 
+# Dependancy files
+*.d
+
 # Libraries
 *.lib
 *.a
