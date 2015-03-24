@@ -28,7 +28,9 @@ enum vga_color
 
 color_t vga_makecolor(enum vga_color foreground, enum vga_color background);
 entry_t vga_makeentry(char c, color_t color);
-void vga_putentry(entry_t entry, size_t x, size_t y);
+//void vga_putentry(entry_t entry, size_t x, size_t y);
+void vga_setcursor(uint8_t x, uint8_t y);
+void vga_getcursor(uint8_t * restrict x, uint8_t * restrict y);
 
 static const size_t VGA_HEIGHT = 25;
 static const size_t VGA_WIDTH = 80;

@@ -79,4 +79,6 @@ void term_write(const char *data)
 
 	for (size_t i = 0; i < length; i++)
 		term_putchar(data[i]);
+
+	vga_setcursor(term_x, term_y);
 }
